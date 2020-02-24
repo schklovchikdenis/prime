@@ -42,7 +42,7 @@ function adaptive_header(w,h) {
 		}
 	}else{
 		$.each($('.header-bottom-menu'), function (index, val) { 
-			if ($(this).hasClass('header-bottom-menu_right')) {
+			if ($(this).hasClass('header-bottom-menu--right')) {
 				if ($(this).hasClass('done')){
 					$(this).removeClass('done').prependTo($('.header-bottom__column').eq(2));
 				}				
