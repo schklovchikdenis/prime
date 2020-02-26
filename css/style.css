@@ -378,6 +378,9 @@ header {
   font-size: 0;
   background-color: #000;
   margin: 0px 0px 75px 0px; }
+  @media (max-width: 767.98px) {
+    .private {
+      margin: 0px 0px 40px 0px; } }
 
 .private__column {
   -webkit-box-flex: 0;
@@ -446,7 +449,10 @@ header {
   margin: 0px 0px 0px 15px; }
 
 .products {
-  padding: 0px 0px 20px 0px; }
+  margin: 0px 0px 40px 0px; }
+  @media (max-width: 767.98px) {
+    .products {
+      margin: 0; } }
 
 .products-body {
   display: -webkit-box;
@@ -455,11 +461,26 @@ header {
   display: -webkit-flex;
   display: flex;
   font-size: 0; }
+  @media (max-width: 767.98px) {
+    .products-body {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .products__column {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 25%;
-  flex: 0 0 25%; }
+  flex: 0 0 25%;
+  margin: 0px 0px 40px 0px; }
+  @media (max-width: 767.98px) {
+    .products__column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%; } }
+  @media (max-width: 380px) {
+    .products__column {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%; } }
 
 .products-item {
   display: -webkit-box;
@@ -478,8 +499,13 @@ header {
   display: block;
   padding: 0px 0px 100% 0px;
   margin: 0px 0px 25px 0px; }
+  @media (max-width: 380px) {
+    .products-image__image {
+      margin: 0px 0px 20px 0px; } }
 
 .products-item__title {
+  height: 50px;
+  overflow: hidden;
   padding: 0px 10px 0px 0px;
   max-width: 185px;
   display: inline-block;
@@ -490,6 +516,12 @@ header {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0px 0px 30px 0px; }
+  @media (max-width: 380px) {
+    .products-item__title {
+      max-width: none;
+      height: auto;
+      overflow: visible;
+      margin: 0px 0px 15px 0px; } }
 
 .products-item__text {
   -webkit-box-flex: 1;
@@ -501,6 +533,10 @@ header {
   font-size: 15px;
   line-height: 25px;
   margin: 0px 0px 25px 0px; }
+  @media (max-width: 380px) {
+    .products-item__text {
+      max-width: none;
+      margin: 0px 0px 15px 0px; } }
 
 .products-item__btn {
   display: inline-block;
