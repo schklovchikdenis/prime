@@ -138,8 +138,10 @@ textarea {
   font-family: "PT Sans";
   font-size: 15px;
   &.focus {
+    
   }
   &.err {
+    border: 2px solid #a71010;
   }
 }
 textarea.input {

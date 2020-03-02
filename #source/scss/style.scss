@@ -137,6 +137,9 @@ body {
   position: relative;
   width: 100%;
   color: #000;
+  /* плавный скролл у анкеров */
+  scroll-behavior: smooth;  
+  text-rendering: optimizeSpeed;
 }
 body {
   font-size: 100%;
@@ -502,6 +505,9 @@ h6 {
 .contacts-body__column {
   flex: 0 0 50%;
   padding: 0px 0px 20px 0px;
+  @media (max-width: $md2+px) {
+    flex: 1 1 100%;
+  }
 }
 .contacts-body__item {
   color: #000000;
@@ -512,13 +518,13 @@ h6 {
   padding: 0px 0px 0px 35px;
 }
 .contacts-body__item--1 {
-  background: url("/img/contacts/01.svg") left no-repeat;
+  background: url("../img/contacts/01.svg") left no-repeat;
 }
 .contacts-body__item--2 {
-  background: url("/img/contacts/02.svg") left no-repeat;
+  background: url("../img/contacts/02.svg") left no-repeat;
 }
 .contacts-body__item--3 {
-  background: url("/img/contacts/03.svg") left no-repeat;
+  background: url("../img/contacts/03.svg") left no-repeat;
 }
 .contacts-social {
   @include flexbox();
@@ -533,7 +539,7 @@ h6 {
 .contacts-content {
   @include flexbox();
   background-color: #000000;
-  @media (max-width:$md2+px){
+  @media (max-width: $md2+px) {
     display: block;
   }
 }
@@ -542,7 +548,7 @@ h6 {
 }
 .contacts-content__map {
   height: 100%;
-  @media (max-width:$md2+px){
+  @media (max-width: $md2+px) {
     height: 380px;
   }
 }
@@ -563,17 +569,7 @@ h6 {
 .contacts-content-form-line {
   margin: 0px 0px 25px 0px;
 }
-.input {
-}
-.contacts-content-form-button {
-}
-.contacts-content-form__btn {
-}
-.btn {
-  
-}
-.btn--w {
-}
+//====================================================================================================
 
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
